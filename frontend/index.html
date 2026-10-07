@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>SchoolSystem - Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body class="dashboard-page">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <div class="logo-icon">
+                S
+            </div>
+
+            <div>
+                <h2>SchoolSystem</h2>
+                <span>Management System</span>
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="#" class="nav-item active">
+                <span>📊</span>
+                Dashboard
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>👨‍🎓</span>
+                Students
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>👨‍🏫</span>
+                Teachers
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>🏫</span>
+                Classes
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>📚</span>
+                Subjects
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>📋</span>
+                Attendance
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>📝</span>
+                Exams
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>📈</span>
+                Results
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>💰</span>
+                Fees
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>🕐</span>
+                Timetable
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="#" class="nav-item logout">
+                <span>🚪</span>
+                Logout
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <!-- Topbar -->
+
+        <header class="topbar">
+
+            <div>
+                <h1>Dashboard</h1>
+                <p>Welcome back to SchoolSystem</p>
+            </div>
+
+
+            <div class="user-profile">
+
+                <div class="user-avatar">
+                    S
+                </div>
+
+                <div class="user-info">
+
+                    <strong id="username">
+                        Admin
+                    </strong>
+
+                    <span id="userRole">
+                        Administrator
+                    </span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- Dashboard Content -->
+
+        <section class="dashboard-content">
+
+            <div class="welcome-card">
+
+                <div>
+
+                    <h2>
+                        Welcome back, <span id="welcomeUsername">
+                            Admin
+                        </span> 👋
+                    </h2>
+
+                    <p>
+                        Here's what's happening in your school today.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Statistics -->
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon students">
+                        👨‍🎓
+                    </div>
+
+                    <div>
+                        <p>Total Students</p>
+                        <h3 id="studentCount">0</h3>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon teachers">
+                        👨‍🏫
+                    </div>
+
+                    <div>
+                        <p>Total Teachers</p>
+                        <h3 id="teacherCount">0</h3>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon classes">
+                        🏫
+                    </div>
+
+                    <div>
+                        <p>Total Classes</p>
+                        <h3 id="classCount">0</h3>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon fees">
+                        💰
+                    </div>
+
+                    <div>
+                        <p>Pending Fees</p>
+                        <h3 id="feeCount">0</h3>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Recent Students -->
+
+            <div class="dashboard-card">
+
+                <div class="card-header">
+
+                    <div>
+
+                        <h2>Recent Students</h2>
+
+                        <p>
+                            Recently registered students
+                        </p>
+
+                    </div>
+
+                    <button class="view-btn">
+                        View All
+                    </button>
+
+                </div>
+
+
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Name</th>
+
+                                <th>Roll No</th>
+
+                                <th>Class</th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="studentTable">
+
+                            <tr>
+
+                                <td colspan="3">
+                                    Loading students...
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>
